@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online School Library</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">📚 E-Library</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#featured">E-Books</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="login.php" class="login-btn">Login</a>
+            <a href="register.php" class="register-btn">Register</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Your Digital Library</h1>
+
+            <p>
+                Discover, read and learn from a wide collection of
+                electronic books anytime and anywhere.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by book title, author or category..."
+                    onkeydown="if(event.key === 'Enter') searchBooks();"
+                >
+
+                <button onclick="searchBooks()">Search</button>
+            </div>
+
+            <a href="login.php" class="register-btn">Start Reading</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <h2>Book Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <h3>📖 Technology</h3>
+                <p>Explore computer and technology books.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🔬 Science</h3>
+                <p>Discover science and research materials.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>📚 Education</h3>
+                <p>Find books for learning and teaching.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🌍 General Knowledge</h3>
+                <p>Expand your knowledge and understanding.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section class="featured-books" id="featured">
+        <h2>Featured E-Books</h2>
+
+        <div class="book-container">
+
+            <div class="book-card">
+                <div class="book-icon">💻</div>
+                <h3>Computer Science</h3>
+                <p>Learn the basics of computer science.</p>
+            </div>
+
+            <div class="book-card">
+                <div class="book-icon">🌐</div>
+                <h3>Web Programming</h3>
+                <p>Understand HTML, CSS and web development.</p>
+            </div>
+
+            <div class="book-card">
+                <div class="book-icon">📘</div>
+                <h3>Networking</h3>
+                <p>Learn about computer networks and communication.</p>
+            </div>
+
+        </div>
+
+        <div class="browse-books">
+            <a href="login.php" class="register-btn">Browse All Books</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3>📚 Online School Library</h3>
+
+        <p>
+            Read, learn and grow with our digital library.
+        </p>
+
+        <p>
+            &copy; 2026 Online School Library. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/javascript.js"></script>
+
+</body>
+</html>
